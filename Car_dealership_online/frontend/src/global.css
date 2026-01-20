@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body{
+    background-color: #000000;
+    overflow-x: hidden;
+    color: #ffffff;
+}
+
+@font-face{
+    font-family: "Benzin";
+    src: url(./assets/fonts/benzin-regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: "Montserrat-Regular";
+    src: url(./assets/fonts/Montserrat-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}

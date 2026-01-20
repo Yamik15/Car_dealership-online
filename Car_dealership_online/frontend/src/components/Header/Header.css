@@ -1,0 +1,27 @@
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header__container{
+   /*  max-width: 1200px; */
+    padding: 3.625rem 3.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.logo{
+    font-family: 'Benzin';
+}
+
+.nav{
+    display: flex;
+    gap: 3.325rem;
+    
+}
+
+hr{
+    color: #ffffff; 
+}
