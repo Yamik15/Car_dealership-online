@@ -10,14 +10,16 @@ class Order(models.Model):
     user = models.ForeignKey(
         'users.User',
         on_delete=models.CASCADE,
-        verbose_name='User'  # Меняем на английский
+        verbose_name='User',  # Меняем на английский
+        related_name='orders'
     )
     
     # ForeignKey к Car
     car = models.ForeignKey(
         'cars.Car',
         on_delete=models.CASCADE,
-        verbose_name='Car'  # Меняем на английский
+        verbose_name='Car',  # Меняем на английский
+        related_name='orders'
     )
     
     # Остальные поля
