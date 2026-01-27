@@ -2,11 +2,11 @@
     position: sticky;
     top: 0;
     z-index: 1000;
+    background-color: #000;
 }
 
 .header__container{
-   /*  max-width: 1200px; */
-    padding: 3.625rem 3.25rem;
+    padding: 3.625rem 1.25rem 2rem 3.25rem;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -14,14 +14,60 @@
 
 .logo{
     font-family: 'Benzin';
+    
 }
 
 .nav{
     display: flex;
-    gap: 3.325rem;
-    
+    gap: 3.625rem;
 }
 
 hr{
     color: #ffffff; 
+}
+
+.logo h1{
+    font-size: 36px;
+}
+
+@media (max-width: 1200px){
+    .logo h1{
+        font-size: 22.5px;
+    }
+
+    .nav{
+        gap: 2.18rem;
+    }
+
+    .header__container{
+        padding: 2.25rem 0.8rem 1.22rem 2rem;
+    }
+}
+
+@media (max-width: 960px){
+    .logo h1{
+        font-size: 18px;
+    }
+
+    .nav{
+        gap: 1.75rem;
+    }
+
+    .header__container{
+        padding: 1.81rem 0.6rem 0.95rem 1.625rem;
+    }
+}
+
+@media (min-width: 1921px) and (max-width: 2560px){
+    .logo h1{
+        font-size: 48px;
+    }
+
+    .nav{
+        gap: 4.63rem;
+    }
+
+    .header__container{
+        padding: 4.8rem 1.75rem 2.58rem 4.33rem;
+    }
 }

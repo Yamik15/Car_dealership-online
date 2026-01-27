@@ -1,0 +1,78 @@
+.user-avatar-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+.user-avatar-button__circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-avatar-button__initials {
+  font-family: 'Montserrat-Regular';
+  font-size: 25px;
+  color: #000000;
+  letter-spacing: 0%;
+}
+
+@media (max-width: 1200px){
+  .user-avatar-button {
+    width: 43.75px;
+    height: 43.75px;
+  }
+
+  .user-avatar-button__circle {
+    width: 43.75px;
+    height: 43.75px;
+  }
+
+  .user-avatar-button__initials {
+    font-size: 15.63px;
+  }
+}
+
+@media (max-width: 960px){
+  .user-avatar-button {
+    width: 35px;
+    height: 35px;
+  }
+
+  .user-avatar-button__circle {
+    width: 35px;
+    height: 35px;
+  }
+
+  .user-avatar-button__initials {
+    font-size: 12.5px;
+}
+}
+
+@media (min-width: 1921px) and (max-width: 2560px){
+  .user-avatar-button {
+    width: 93.33px;
+    height: 93.33px;
+  }
+
+  .user-avatar-button__circle {
+    width: 93.33px;
+    height: 93.33px;
+  }
+
+  .user-avatar-button__initials {
+    font-size: 33.33px;
+  }
+}
