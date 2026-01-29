@@ -1,0 +1,48 @@
+.container{
+  width: 100%;
+  padding: 80px 66px 0 130px;
+  margin: 0 auto;
+}
+
+.dream-delivery{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.dream-delivery__content{
+  font-family: 'Benzin';
+}
+
+.dream-delivery__content h2{
+  font-size: 36px;
+}
+
+.benefits {
+  font-family: 'Montserrat-Regular';
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2.2rem;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dream-delivery__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+
+.dream-delivery__content,
+.dream-delivery__image {
+  flex: 1;
+  min-width: 0; 
+}

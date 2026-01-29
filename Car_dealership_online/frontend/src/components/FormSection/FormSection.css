@@ -1,0 +1,42 @@
+.title{
+    font-size: 36px;
+    font-family: 'Benzin';
+    text-align: center;
+}
+
+.form-section__container{
+    margin-top: 5rem;
+    padding: 2.5rem 7.8rem 0 7.8rem;
+}
+
+.form-section__content{
+    margin-top: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.4375rem;
+}
+
+.form-section__forms{
+    display: flex;
+    gap: 3.625rem;
+}
+
+.two-forms{
+    display: flex;
+    gap: 1.31rem;
+    flex: 1;
+}
+
+.price-input {
+    flex: 1;
+}
+
+.form-section__button .button{
+  font-size: 25px;
+  padding: 1.875rem 7.25rem;
+}
+
+.form-section__button{
+  display: flex;
+  justify-content: flex-end;
+}
