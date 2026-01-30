@@ -1,7 +1,6 @@
 import os
 import sys
 
-# Настройка Django - должна быть ПЕРВОЙ!
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Car_dealership_online.settings')
 
@@ -11,28 +10,24 @@ django.setup()
 from users.models import User
 
 def create_default_users():
-    """Создаёт 4 тестовых пользователя (с твоей моделью)"""
+    """Создаёт 4 тестовых пользователя"""
     
     users_data = [
-        # 1. Роман
         {
             'email': 'roman@gmail.com',
             'password': '1234',
             'phone': '+78005553535'
         },
-        # 2. Кирилл
         {
             'email': 'kirill@gmail.com',
             'password': '1234',
             'phone': '+78005553536'
         },
-        # 3. Аня
         {
             'email': 'anya@gmail.com',
             'password': '1234',
             'phone': '+78005553537'
         },
-        # 4. Федор
         {
             'email': 'fedor@gmail.com',
             'password': '1234',

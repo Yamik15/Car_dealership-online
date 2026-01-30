@@ -10,7 +10,7 @@ class Order(models.Model):
     user = models.ForeignKey(
         'users.User',
         on_delete=models.CASCADE,
-        verbose_name='User',  # Меняем на английский
+        verbose_name='User',
         related_name='orders'
     )
     
@@ -18,38 +18,38 @@ class Order(models.Model):
     car = models.ForeignKey(
         'cars.Car',
         on_delete=models.CASCADE,
-        verbose_name='Car',  # Меняем на английский
+        verbose_name='Car',
         related_name='orders'
     )
     
     # Остальные поля
     delivery_address = models.TextField(
-        verbose_name='Delivery address'  # Английский
+        verbose_name='Delivery address'
     )
     
     delivery_date = models.DateField(
-        verbose_name='Delivery date'  # Английский
+        verbose_name='Delivery date'
     )
     
     status = models.CharField(
         max_length=50,
-        verbose_name='Status'  # Английский
+        verbose_name='Status'
     )
     
     created_at = models.DateTimeField(
         default=timezone.now,
-        verbose_name='Created at'  # Английский
+        verbose_name='Created at'
     )
     
     updated_at = models.DateTimeField(
         auto_now=True,
-        verbose_name='Updated at'  # Английский
+        verbose_name='Updated at'
     )
     
     class Meta:
         db_table = 'orders'
-        verbose_name = 'Order'  # ← ИЗМЕНЯЕМ ЭТО! Было: 'Заказ'
-        verbose_name_plural = 'Orders'  # ← ИЗМЕНЯЕМ ЭТО! Было: 'Заказы'
+        verbose_name = 'Order'
+        verbose_name_plural = 'Orders'
         ordering = ['-created_at']
     
     def __str__(self):

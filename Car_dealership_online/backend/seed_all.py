@@ -1,7 +1,6 @@
 import os
 import sys
 
-# Настройка Django - должна быть ПЕРВОЙ!
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Car_dealership_online.settings')
 
@@ -9,7 +8,6 @@ import django
 django.setup()
 
 def seed_database():
-    """Заполняет БД всеми тестовыми данными"""
     
     print("🌱 ЗАПОЛНЕНИЕ БАЗЫ ДАННЫХ ТЕСТОВЫМИ ДАННЫМИ")
     print("=" * 60)

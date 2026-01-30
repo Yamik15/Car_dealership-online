@@ -5,9 +5,6 @@ from .models import Order
 from .serializers import OrderSerializer
 
 class OrderViewSet(viewsets.ModelViewSet):
-    """
-    ViewSet для заказов.
-    """
     queryset = Order.objects.all()
     serializer_class = OrderSerializer
     

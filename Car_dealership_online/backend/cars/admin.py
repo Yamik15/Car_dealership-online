@@ -21,7 +21,7 @@ class CarAdmin(admin.ModelAdmin):
         'description',
     )
     
-    # Поля в форме редактирования (все поля из ТЗ в том же порядке)
+    # Поля в форме редактирования
     fields = (
         'brand',
         'model',

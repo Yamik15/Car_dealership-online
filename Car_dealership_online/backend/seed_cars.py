@@ -1,7 +1,6 @@
 import os
 import sys
 
-# Настройка Django - должна быть ПЕРВОЙ!
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Car_dealership_online.settings')
 
@@ -15,7 +14,6 @@ def create_default_cars():
     """Создаёт 9 тестовых автомобилей"""
     
     cars_data = [
-        # 1. Toyota Camry
         {
             'brand': 'Toyota',
             'model': 'Camry',
@@ -30,7 +28,6 @@ def create_default_cars():
             'image_urls': 'https://carsweek.ru/upload/resize_cache/iblock/ea7/1200_900_1/4vq82xtlx1tfwtz9qxzr76zxtqqosu11.jpg',
             'status': 'available'
         },
-        # 2. BMW X5
         {
             'brand': 'BMW',
             'model': 'X5',
@@ -45,7 +42,6 @@ def create_default_cars():
             'image_urls': 'https://ilc.su/templates/yootheme/cache/5f/x5-5f9a1f22.jpeg',
             'status': 'available'
         },
-        # 3. Renault Megane
         {
             'brand': 'Renault',
             'model': 'Megane',
@@ -60,7 +56,6 @@ def create_default_cars():
             'image_urls': 'https://cdn.motor1.com/images/mgl/0l6g2/s1/2020-renault-megane-rs-trophy-facelift.jpg',
             'status': 'available'
         },
-        # 4. Kia Rio
         {
             'brand': 'Kia',
             'model': 'Rio',
@@ -75,7 +70,6 @@ def create_default_cars():
             'image_urls': 'https://kolesa-uploads.ru/r/880x/b8337fd4-8056-48c4-b60f-c5ca951120c4/kia-rio1.jpg',
             'status': 'available'
         },
-        # 5. Mercedes-Benz E-Class
         {
             'brand': 'Mercedes-Benz',
             'model': 'E-Class',
@@ -90,7 +84,6 @@ def create_default_cars():
             'image_urls': 'https://a.d-cd.net/SBDFBg67fhbwZUUpoZPVM4hvqBg-1920.jpg',
             'status': 'available'
         },
-        # 6. Skoda Octavia
         {
             'brand': 'Skoda',
             'model': 'Octavia',
@@ -105,7 +98,6 @@ def create_default_cars():
             'image_urls': 'https://topruscar.ru/assets/images/kt/kt2022_skoda-octavia_001.jpg',
             'status': 'available'
         },
-        # 7. Hyundai Creta
         {
             'brand': 'Hyundai',
             'model': 'Creta',
@@ -120,7 +112,6 @@ def create_default_cars():
             'image_urls': 'https://www.allcarz.ru/wp-content/uploads/2020/03/foto-creta-2019_07.jpg',
             'status': 'available'
         },
-        # 8. Audi A4
         {
             'brand': 'Audi',
             'model': 'A4',
@@ -135,7 +126,6 @@ def create_default_cars():
             'image_urls': 'https://roadres.com/images/top/audi/a4-b9.jpg',
             'status': 'available'
         },
-        # 9. Citroen DS4
         {
             'brand': 'Citroen',
             'model': 'DS4',
@@ -173,7 +163,6 @@ def create_default_cars():
     print("=" * 60)
     print(f"🎉 УСПЕШНО СОЗДАНО: {created_count} автомобилей")
     
-    # Статистика
     print("\n📊 СТАТИСТИКА:")
     total_cars = Car.objects.count()
     print(f"   Всего автомобилей в БД: {total_cars}")

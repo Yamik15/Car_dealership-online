@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-"""
-Скрипт для полной настройки проекта
-"""
-
 import os
 import sys
 import subprocess
