@@ -9,23 +9,23 @@ export default function FormSection(){
     const [model, setModel] = useState('')
     const [city, setCity] = useState('')
     const [year, setYear] = useState('')
-      const brands = [
+    const brands = [
         { value: 'bmw', label: 'BMW' },
         { value: 'audi', label: 'Audi' },
         { value: 'mercedes', label: 'Mercedes-Benz' },
         { value: 'toyota', label: 'Toyota' },
     ]
     const models = [
-    { value: 'x5', label: 'X5' },
-    { value: 'a4', label: 'A4' },
-    { value: 'c-class', label: 'C-Class' },
-    { value: 'camry', label: 'Camry' },
+        { value: 'x5', label: 'X5' },
+        { value: 'a4', label: 'A4' },
+        { value: 'c-class', label: 'C-Class' },
+        { value: 'camry', label: 'Camry' },
     ]
     const cities = [
-    { value: 'moscow', label: 'Москва' },
-    { value: 'spb', label: 'Санкт-Петербург' },
-    { value: 'ekb', label: 'Екатеринбург' },
-    { value: 'kazan', label: 'Казань' },
+        { value: 'moscow', label: 'Москва' },
+        { value: 'spb', label: 'Санкт-Петербург' },
+        { value: 'ekb', label: 'Екатеринбург' },
+        { value: 'kazan', label: 'Казань' },
     ]
     const years = Array.from({length: 30}, (_, i) => {
      const year = new Date().getFullYear() - i;

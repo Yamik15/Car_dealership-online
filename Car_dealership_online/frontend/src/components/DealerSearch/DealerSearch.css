@@ -1,0 +1,71 @@
+.container{
+    padding: 5.44rem 3.44rem 1rem 4.125rem;
+}
+
+.title h2{
+    font-family: 'Benzin';
+    font-size: 96px;
+}
+
+.name{
+    font-family: 'Benzin';
+    font-size: 48px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 5.625rem;
+    flex: 1;
+}
+
+.content{
+    flex: 1;
+    max-width: 600px;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1.625rem;
+}
+
+.services{
+    font-family: 'Montserrat-Regular';
+    font-size: 25px;
+    margin-top: 2.375rem;
+}
+
+.services__list{
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 1.2rem;
+    text-align: center;
+    font-size: 20px;
+}
+
+.services-item p{
+    margin-top: 1rem;
+}
+
+.contacts{
+    margin-top: 1.625rem;
+    font-family: 'Montserrat-Regular';
+    font-size: 25px;
+}
+
+.contacts a{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.map {
+    flex: 2; 
+    min-height: 600px; 
+    background: #ffffff; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4.19rem;
+}

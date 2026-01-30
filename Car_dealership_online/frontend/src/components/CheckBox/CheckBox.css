@@ -1,0 +1,52 @@
+.checkbox__wrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  gap: 10px;
+}
+
+.customCheckbox {
+  width: 38px;
+  height: 38px;
+  border: 2px solid #ffffff; 
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+  background-color: #D9D9D9;
+  position: relative;
+  overflow: hidden;
+}
+
+.checkmark {
+  width: 38px;
+  height: 38px;
+  background-image: url("../icons/CheckMark.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55); 
+}
+
+.customCheckbox.checked .checkmark {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.customCheckbox.checked .checkmark.css {
+  opacity: 1;
+  transform: rotate(-45deg) scale(1);
+}
+
+.label {
+  font-family:'Montserrat-Regular';
+  font-size: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 0;
+}

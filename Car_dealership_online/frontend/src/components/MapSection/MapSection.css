@@ -1,0 +1,13 @@
+.map__container{
+    padding: 8.25rem 21rem 0 21rem;
+    min-height: 800px;
+    box-sizing: border-box;
+    height: 70vh;
+}
+
+.map {
+    height: 100%; 
+    width: 100%;
+    min-height: 800px;
+    overflow: hidden;
+}
