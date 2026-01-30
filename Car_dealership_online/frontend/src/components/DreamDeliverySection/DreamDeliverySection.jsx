@@ -2,7 +2,7 @@ import './DreamDeliverySection.css'
 
 export default function DreamDeliverySection(){
     return(
-        <div className="container">
+        <div className="delivery-container">
             <div className="dream-delivery">
                 <div className="dream-delivery__content">
                     <h2>ПРИВЕЗЁМ ВАШУ МЕЧТУ <br/>ПРЯМО В ВАШ ДОМ!</h2>

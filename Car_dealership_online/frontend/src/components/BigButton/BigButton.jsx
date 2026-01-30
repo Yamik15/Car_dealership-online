@@ -1,16 +1,26 @@
 import './BigButton.css'
+import { useNavigate } from 'react-router-dom';
 
 export default function BigButton({
     icon,
     text,
+    to,
     description,
     onClick,
     className=""
 }){
+    const navigate = useNavigate()
+    const handleClick = () => {
+    if (to) {
+      navigate(to); 
+    } else if (onClick) {
+      onClick(); 
+    }
+  }
     return(
         <button 
             className={`big-button ${className}`}
-            onClick={onClick}
+            onClick={handleClick}
         >
             {icon && (
                 <div className="big-button__icon">

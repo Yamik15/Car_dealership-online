@@ -8,12 +8,14 @@ export default function ButtonsSection(){
                 icon="/icons/Dealers.svg"
                 text="НАЙТИ ДИЛЕРА"
                 description="200+ дилерских центра по России"
+                 to="/dealers"
                 className='button__left'
             />
             <BigButton
                 icon="/icons/Test_drive.svg"
                 text="ТЕСТ-ДРАЙВ"
                 description="Моментальная заявка в любое удобное для вас время"
+                to="/test-drive"
                 className='button__right'
             />
         </div>

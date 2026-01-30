@@ -18,7 +18,7 @@ export default function DealerSearch(){
         { value: 'k', label: 'К' },
     ]
     return(
-        <div className="container">
+        <div className="dealer-container">
             <div className="title">
                 <h2>Поиск дилера</h2>
             </div>
@@ -59,7 +59,7 @@ export default function DealerSearch(){
                         <a href="#">Ссылка на сайт дилера</a>
                     </div>
                 </div>
-                <div className="map">
+                <div className="dealers-map">
                     <iframe 
                         src="https://yandex.ru/map-widget/v1/?ll=50.193977%2C53.217241&z=15&l=map&pt=50.193977%2C53.217241%2Cpm2rdm"
                         width="100%"

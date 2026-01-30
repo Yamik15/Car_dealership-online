@@ -36,7 +36,7 @@ export default function TestDriveSection(){
         { value: 'ж', label: 'ж' },
     ]
     return(
-        <div className="container">
+        <div className="testdrive-container">
             <div className="title">
                 <h2>Тест-драйв</h2>
             </div>
