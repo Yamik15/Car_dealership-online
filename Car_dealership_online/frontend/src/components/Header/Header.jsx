@@ -3,7 +3,6 @@ import UserAvatarButton from '../UserAvatarButton/UserAvatarButton'
 import Button from '../Button/Button'
 import { Link } from 'react-router-dom'
 
-
 export default function Header(){
     return(
         <header className='header'>
