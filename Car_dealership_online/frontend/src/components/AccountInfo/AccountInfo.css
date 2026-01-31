@@ -1,0 +1,319 @@
+.account-info-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: #000000;
+    color: #ffffff;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.main-content {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 160px;
+    padding-bottom: 50px;
+}
+
+.account-title {
+    font-family: 'Benzin-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 132px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 0 40px 0;
+}
+
+.user-info-section {
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 80px;
+}
+
+.user-title {
+    font-family: 'Benzin-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 66px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 0 40px 0;
+}
+
+.user-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.user-avatar-container {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-avatar {
+    width: 300px;
+    height: 300px;
+}
+
+.avatar-circle {
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar-initials {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 117px;
+    color: #000000;
+}
+
+.logout-btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+}
+
+.logout-btn:hover {
+    color: #FF0000;
+    text-decoration-line: none;
+}
+
+.user-data-container {
+    flex: 1;
+    max-width: 517px;
+}
+
+.user-data-fields {
+    width: 100%;
+}
+
+.data-field {
+    margin-bottom: 32px;
+}
+
+.field-content {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 16px;
+    width: 100%;
+    height: 86px;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    background: transparent;
+}
+
+.field-value {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: left;
+}
+
+.orders-section {
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 60px;
+}
+
+.orders-title {
+    font-family: 'Benzin-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 66px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 0 40px 0;
+}
+
+.orders-table-container {
+    max-width: 924px;
+    margin: 0 auto;
+}
+
+.orders-table {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 313px;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.table-divider {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    left: 0;
+    border: 1px solid #FFFFFF;
+}
+
+.divider-1 {
+    top: 83px;
+}
+
+.divider-2 {
+    top: 199px;
+}
+
+.vertical-divider-1 {
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 33%;
+    top: 0;
+    border: 1px solid #FFFFFF;
+}
+
+.vertical-divider-2 {
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 67%;
+    top: 0;
+    border: 1px solid #FFFFFF;
+}
+
+.table-headers {
+    position: absolute;
+    width: 100%;
+    top: 26px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-cell {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.header-order {
+    width: 33%;
+}
+
+.header-status {
+    width: 33%;
+}
+
+.header-car {
+    width: 33%;
+}
+
+.table-rows {
+    position: absolute;
+    width: 100%;
+    top: 83px;
+}
+
+.order-row {
+    height: 116px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.order-cell {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: #FFFFFF;
+    text-align: center;
+    width: 33%;
+}
+
+.order-number {
+    padding-left: 15%;
+}
+
+.order-status {
+    text-align: center;
+}
+
+.order-car {
+    text-align: center;
+}
+
+
+.copyright {
+    position: absolute;
+    width: 615px;
+    height: 24px;
+    left: 42px;
+    top: 120px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .account-title {
+        font-size: 72px;
+        line-height: 100px;
+    }
+    
+    .user-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .user-avatar-container {
+        margin-bottom: 40px;
+    }
+    
+    .user-data-container {
+        max-width: 100%;
+    }
+}

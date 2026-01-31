@@ -1,3 +1,4 @@
+
 import Header from '../components/Header/Header'
 import '../global.css'
 import DreamDeliverySection from '../components/DreamDeliverySection/DreamDeliverySection'
@@ -11,9 +12,9 @@ export default function HomePage() {
     <div>
       <Header />
       <DreamDeliverySection />
-      <FormSection/>
-      <ButtonsSection/>
-      <Footer/>
+      <FormSection />
+      <ButtonsSection />
+      <Footer />
     </div>
   )
 }
