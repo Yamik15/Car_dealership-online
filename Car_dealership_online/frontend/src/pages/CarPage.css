@@ -1,0 +1,406 @@
+.car-detail-page {
+    background: #000000;
+    color: #FFFFFF;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    width: 100%;
+  }
+  
+  .car-detail-content {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 159px;
+  }
+  
+  .car-title {
+    position: absolute;
+    width: 1104px;
+    height: 111px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 261px;
+    font-family: 'Benzin-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 132px;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .car-main-price {
+    position: absolute;
+    width: 984px;
+    height: 116px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1318px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 86px;
+    line-height: 105px;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .car-main-image {
+    position: absolute;
+    width: 1514px;
+    height: 856px;
+    left: 203px;
+    top: 405px;
+    border: 1px solid #FFFFFF;
+    overflow: hidden;
+  }
+  
+  .car-main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .specs-equipment-container {
+    position: absolute;
+    width: 100%;
+    top: 1593px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .specs-column {
+    width: 711px;
+    height: 862px;
+    border: 1px solid #FFFFFF;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .equipment-column {
+    width: 711px;
+    height: 862px;
+    border: 1px solid #FFFFFF;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .section-title {
+    font-family: 'Benzin-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 66px;
+    text-align: center;
+    margin: 0 0 40px 0;
+  }
+  
+  .specs-content,
+  .equipment-content {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .specs-left,
+  .equipment-left {
+    width: 161px;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  
+  .specs-right,
+  .equipment-right {
+    flex: 1;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  
+  .description {
+    margin-top: 10px;
+    font-weight: 400;
+  }
+  
+  .application-section {
+    position: absolute;
+    width: 100%;
+    top: 2657px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .application-title {
+    font-family: 'Benzin-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+    width: 959px;
+    margin: 0 0 40px 0;
+  }
+  
+  .application-form {
+    width: 711px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .form-inputs {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .name-input,
+  .phone-input {
+    width: 365px;
+    height: 90px;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    padding: 0 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: #FFFFFF;
+    box-sizing: border-box;
+  }
+  
+  .name-input::placeholder,
+  .phone-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+  }
+  
+  .submit-btn {
+    width: 365px;
+    height: 90px;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background: #FFFFFF;
+    color: #000000;
+  }
+  
+  .consent-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .consent-checkbox {
+    width: 38px;
+    height: 38px;
+    background: #D9D9D9;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .consent-label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+  
+  .similar-cars-section {
+    position: absolute;
+    width: 100%;
+    top: 3266px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .similar-title {
+    font-family: 'Benzin-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+    width: 535px;
+    margin: 0 0 40px 0;
+  }
+  
+  .similar-cars-grid {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  .car-card {
+    width: 612px;
+    height: 709px;
+    border: 1px solid #FFFFFF;
+    position: relative;
+  }
+  
+  .car-card-image {
+    width: 612px;
+    height: 346px;
+    border-bottom: 1px solid #FFFFFF;
+    overflow: hidden;
+  }
+  
+  .car-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .car-card-title {
+    font-family: 'Benzin-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    margin: 20px 0;
+    border: 1px solid #FFFFFF;
+    padding: 10px;
+  }
+  
+  .car-card-specs {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    padding: 0 20px;
+  }
+  
+  .car-card-price {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    padding: 0 20px;
+    margin: 10px 0;
+  }
+  
+  .view-car-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 70px;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .view-car-btn:hover {
+    background: #FFFFFF;
+    color: #000000;
+  }
+  
+  .show-more-btn {
+    width: 321px;
+    height: 70px;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .show-more-btn:hover {
+    background: #FFFFFF;
+    color: #000000;
+  }
+
+  .info-blocks {
+    position: absolute;
+    width: 100%;
+    top: 4318px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 28px;
+    box-sizing: border-box;
+  }
+  
+  .info-block {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    flex: 1;
+    max-width: 576px;
+  }
+  
+  .info-icon {
+    width: 90px;
+    height: 90px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: #000000;
+  }
+  
+  .info-text h3 {
+    font-family: 'Benzin-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+    margin: 0 0 15px 0;
+  }
+  
+  .info-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    margin: 0;
+  }
+  
+  .loading, .error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 24px;
+    color: #FFFFFF;
+  }
+  
+  .spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #FFFFFF;
+    animation: spin 1s linear infinite;
+    margin-right: 10px;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }

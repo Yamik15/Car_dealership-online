@@ -1,0 +1,12 @@
+.buttons-container{
+    display: flex;
+    margin-top: 5.675rem;
+}
+
+.buttons-container .button__left{
+    border-left: none;
+}
+
+.buttons-container .button__right{
+    border-right: none;
+}

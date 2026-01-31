@@ -1,0 +1,138 @@
+.car-info-section {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    min-height: 5187px;
+    background: #000000;
+    color: #ffffff;
+    padding: 60px 120px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  
+  .car-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  
+  .car-main-price {
+    font-size: 64px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 40px;
+  }
+  
+  .car-main-image {
+    width: 100%;
+    height: 600px;
+    margin-bottom: 80px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .car-main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .specs-equipment-container {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 80px;
+  }
+  
+  .specs-column,
+  .equipment-column {
+    flex: 1;
+  }
+  
+  .section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 30px 0;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #ffffff;
+    text-transform: uppercase;
+  }
+  
+  .specs-content,
+  .equipment-content {
+    display: flex;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .specs-left,
+  .equipment-left {
+    flex: 1;
+    font-weight: 600;
+    color: #cccccc;
+    padding-right: 20px;
+  }
+  
+  .specs-right,
+  .equipment-right {
+    flex: 2;
+    color: #ffffff;
+  }
+  
+  .specs-left p,
+  .specs-right p,
+  .equipment-left p,
+  .equipment-right p {
+    margin: 0 0 20px 0;
+    min-height: 24px;
+  }
+  
+  .description {
+    font-style: italic;
+    color: #aaaaaa;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .car-info-section {
+      padding: 40px 60px;
+    }
+    
+    .specs-equipment-container {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .car-info-section {
+      padding: 30px 20px;
+      min-height: auto;
+    }
+    
+    .car-title {
+      font-size: 32px;
+    }
+    
+    .car-main-price {
+      font-size: 48px;
+    }
+    
+    .car-main-image {
+      height: 400px;
+    }
+    
+    .specs-content,
+    .equipment-content {
+      flex-direction: column;
+    }
+    
+    .specs-left,
+    .equipment-left {
+      padding-right: 0;
+      margin-bottom: 10px;
+    }
+  }

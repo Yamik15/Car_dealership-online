@@ -1,0 +1,114 @@
+.dropdown-select {
+  position: relative;
+  width: 100%;
+  font-family: Montserrat-Regular;
+}
+
+.dropdown-select__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.75rem 1rem;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 48px;
+  box-sizing: border-box;
+}
+
+.dropdown-select__header:hover,
+.dropdown-select__header.open {
+  border-color: #ffffff;
+}
+
+.dropdown-select__header.open{
+  border-radius: 20px 20px 0 0;
+}
+
+.dropdown-select__placeholder {
+  color: #666;
+  font-size: 25px;
+}
+
+.dropdown-select__header.open .dropdown-select__placeholder,
+.dropdown-select:not(.disabled) .dropdown-select__header:not(.open) .dropdown-select__placeholder {
+  color: #ffffff;
+}
+
+.dropdown-select__list {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background-color: #000;
+  border: 1px solid #d0d0d0;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.dropdown-select__item {
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 25px;
+}
+
+.dropdown-select__item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-select__item:hover, .dropdown-select__item.selected {
+  background-color: #555;
+}
+
+.dropdown-select__item.empty {
+  color: #999;
+  cursor: default;
+}
+
+.dropdown-select__item.empty:hover {
+  background-color: transparent;
+}
+
+.dropdown-select.disabled .dropdown-select__header {
+  background-color: #f9f9f9;
+  cursor: not-allowed;
+  border-color: #e0e0e0;
+}
+
+.dropdown-select.disabled .dropdown-select__placeholder {
+  color: #999;
+}
+
+.dropdown-select.error .dropdown-select__header,
+.dropdown-select.error .dropdown-select__header:hover,
+.dropdown-select.error .dropdown-select__header.open {
+  border-color: #ff3b30;
+}
+
+.dropdown-select__error {
+  color: #ff3b30;
+}
+
+.dropdown-select__list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.dropdown-select__list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dropdown-select__list::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 2px;
+}
+
+.dropdown-select__list::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
